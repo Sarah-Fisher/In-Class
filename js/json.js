@@ -7,19 +7,19 @@ async function populate() {
     // Introducing JavaScript Object Notation (JSON): https://json.org/
     // STEP 4a: Create i-scream.json file with companyName, headOffice, established, active, topFlavors(name, calories, type, ingredients, image) */
     // STEP 4b: Store the URL of a JSON file in a variable */
-    const jasonURL = "https://github.com/PriyanshT/js-json-example/blob/main/i-scream.jason";
+    const jsonURL = "https://sarah-fisher.github.io/In-Class/js/i-scream.json";
     // STEP 5: Use the new URL to create a new request object
-    const request = new Request(jasonURL);
+    const request = new Request(jsonURL);
     // STEP 6: Make a network request with the fetch() function, which returns a Response object
     const response = await fetch(request);
     // STEP 7: Capture the returned Response object and covert to a JSON object using json()
-
+    const iScream = await response.json();
     // STEP 8: Output the iScream JSON object to the console 
-
+    console.log(iScream);
     // STEP 9a: Invoke the populateHeader function here, then build it below
-
+    populateHeader(iScream);
     // STEP 10a: Invoke the showTopFlavors function here, then build it below
-
+    //showTopFlavours(iScream);
 }
 
 // STEP 3b: Call the populate() function
@@ -27,14 +27,14 @@ populate();
 /* STEP 9b: Build out the populateHeader() function */
 function populateHeader(jsonObj) {
     // Create the H1 element
-
+    let h1 = document.createElement("h1");
     // Grab the company name from the JSON object and use it for the text node
-
+    h1.textContent = jsonObj.companyName;
     // Inject the complete H1 element into the DOM, inside the HEADER
-
+    header.appendChild(h1);
 };
 /* STEP 10b: Assemble the showTopFlavors() function */
-function showTopFlavors(jsonObj) {
+//function showTopFlavors(jsonObj) {
     // STEP 10c: Bind the JSON topFlavors object to a var
 
     // STEP 10d: Loop through the topFlavors object
@@ -49,7 +49,7 @@ function showTopFlavors(jsonObj) {
 
 
     // STEP 10i: Append each complete ARTICLE element to the SECTION element
-};
+//};
 
 // STEP 11: Add a 3rd flavour of ice cream to the local JSON file, making use of the /images/strawberry-sprinkle.svg image
 
