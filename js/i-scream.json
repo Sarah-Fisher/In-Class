@@ -22,6 +22,18 @@
             "type" : "ice cream",
             "ingredients" : ["strawberries", "candy sprinkles", "strawberry base"],
             "image" : "strawberry-sprinkle.svg"
+        }, {
+            "name" : "Lime Rainbow",
+            "calories" : 300,
+            "type" : "ice cream",
+            "ingredients" : ["sour candies", "lime base"],
+            "image" : "ice-cream-xtra1.svg"
+        }, {
+            "name" : "Butter Tart",
+            "calories" : 450,
+            "type" : "ice cream",
+            "ingredients" : ["butterscotch ripple", "buttertart pieces", "maple base"],
+            "image" : "ice-cream-xtra2.svg"
         }
     ]
 }
