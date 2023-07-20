@@ -26,7 +26,7 @@
             "name" : "Lime Rainbow",
             "calories" : 300,
             "type" : "ice cream",
-            "ingredients" : ["sour candies", "lime base"],
+            "ingredients" : ["marshmallow", "sour candies", "lime base"],
             "image" : "ice-cream-xtra1.svg"
         }, {
             "name" : "Butter Tart",
