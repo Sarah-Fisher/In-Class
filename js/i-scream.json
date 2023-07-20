@@ -16,6 +16,12 @@
             "type" : "milkshake",
             "ingredients" : ["peaches", "mango chunks", "vanilla base"],
             "image" : "peach-mango.svg"
+        }, {
+            "name" : "Strawberry Sprinkle",
+            "calories" : 400,
+            "type" : "ice cream",
+            "ingredients" : ["strawberries", "candy sprinkles", "strawberry base"],
+            "image" : "strawberry-sprinkle.svg"
         }
     ]
 }
